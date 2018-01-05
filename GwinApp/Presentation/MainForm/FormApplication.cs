@@ -1,13 +1,11 @@
-﻿using App.Gwin.Application.Presentation.EntityManagement;
-using SplashScreen;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Globalization;
 using System.Windows.Forms;
 
-namespace App.Gwin.Application.Presentation.MainForm
+namespace GwinApp
 {
-    public partial class FormApplication : BaseForm, IApplicationMenu
+    public partial class FormApplication : BaseForm
     {
 
       //  protected EntityManagementCreator entityManagementCreator { set; get; }
@@ -39,19 +37,19 @@ namespace App.Gwin.Application.Presentation.MainForm
 
             // Create Menu Application
              // -- entityManagementCreator = new EntityManagementCreator(GwinApp.Instance.TypeDBContext, this);
-            new CreateApplicationMenu(this);
+            //new CreateApplicationMenu(this);
 
             // Change Form Direction  - When  Languauge is changed
-            if (GwinApp.Instance.CultureInfo.TwoLetterISOLanguageName == "fr" || GwinApp.Instance.CultureInfo.TwoLetterISOLanguageName == "en")
-            {
-                this.RightToLeftLayout = false;
-                this.RightToLeft = RightToLeft.No;
-            }
-            else
-            {
-                this.RightToLeftLayout = true;
-                this.RightToLeft = RightToLeft.Yes;
-            }
+            //if (GwinApp.Instance.CultureInfo.TwoLetterISOLanguageName == "fr" || GwinApp.Instance.CultureInfo.TwoLetterISOLanguageName == "en")
+            //{
+            //    this.RightToLeftLayout = false;
+            //    this.RightToLeft = RightToLeft.No;
+            //}
+            //else
+            //{
+            //    this.RightToLeftLayout = true;
+            //    this.RightToLeft = RightToLeft.Yes;
+            //}
 
             // [Bug] : Form somtime not good showen when language is changed
             // [Temporary Fix] 
@@ -73,24 +71,24 @@ namespace App.Gwin.Application.Presentation.MainForm
             this.Controls.Clear();
         }
 
-        public MenuStrip getMenuStrip()
-        {
-            return this.menuStrip1;
-        }
+        //public MenuStrip getMenuStrip()
+        //{
+        //    return this.menuStrip1;
+        //}
 
         private void frenchToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            GwinApp.ChangeLanguage(CultureInfo.CreateSpecificCulture("fr"));
+          //  GwinApp.ChangeLanguage(CultureInfo.CreateSpecificCulture("fr"));
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GwinApp.ChangeLanguage(CultureInfo.CreateSpecificCulture("en"));
+           // GwinApp.ChangeLanguage(CultureInfo.CreateSpecificCulture("en"));
         }
 
         private void arabToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GwinApp.ChangeLanguage(new CultureInfo("ar"));
+          //  GwinApp.ChangeLanguage(new CultureInfo("ar"));
         }
 
         private void languageToolStripMenuItem1_Click(object sender, EventArgs e)

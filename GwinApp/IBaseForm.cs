@@ -1,4 +1,4 @@
-﻿namespace GwinForm
+﻿namespace GwinApp
 {
     public interface IBaseForm
     {
