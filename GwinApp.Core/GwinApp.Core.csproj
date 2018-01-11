@@ -7,7 +7,7 @@
     <ProjectGuid>{F780E1F8-A058-421D-B803-1B74FF63381E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GwinApp</RootNamespace>
+    <RootNamespace>GApp.GwinApp</RootNamespace>
     <AssemblyName>GwinApp.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -60,35 +60,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IBaseForm.cs" />
-    <Compile Include="BaseForm.cs">
+    <Compile Include="Presentation\IBaseForm.cs" />
+    <Compile Include="Presentation\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GMainForm.cs">
+    <Compile Include="Presentation\GwinMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\MainForm\FormApplication.cs">
+    <Compile Include="Presentation\FormApplication.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\MainForm\FormApplication.Designer.cs">
+    <Compile Include="Presentation\FormApplication.Designer.cs">
       <DependentUpon>FormApplication.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="BaseForm.resx">
+    <EmbeddedResource Include="Presentation\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GMainForm.resx">
-      <DependentUpon>GMainForm.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\GwinMainForm.resx">
+      <DependentUpon>GwinMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\MainForm\FormApplication.ar.resx">
+    <EmbeddedResource Include="Presentation\FormApplication.ar.resx">
       <DependentUpon>FormApplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\MainForm\FormApplication.fr.resx">
+    <EmbeddedResource Include="Presentation\FormApplication.fr.resx">
       <DependentUpon>FormApplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\MainForm\FormApplication.resx">
+    <EmbeddedResource Include="Presentation\FormApplication.resx">
       <DependentUpon>FormApplication.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

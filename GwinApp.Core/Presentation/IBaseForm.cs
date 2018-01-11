@@ -1,4 +1,4 @@
-﻿namespace GwinApp
+﻿namespace GApp.GwinApp
 {
     public interface IBaseForm
     {

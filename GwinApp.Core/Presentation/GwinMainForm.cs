@@ -5,16 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GwinApp
+namespace GApp.GwinApp.Presentation
 {
-    public class GMainForm : GForm
+    public class GwinMainForm : GForm
     {
         private MetroSet_UI.Child.MetroSetTabPage metroSetTabPage1;
         public GTab GTabControl;
 
         private void InitializeComponent()
         {
-            this.GTabControl = new GwinApp.UI.GTab();
+            this.GTabControl = new  GTab();
             this.metroSetTabPage1 = new MetroSet_UI.Child.MetroSetTabPage();
             this.GTabControl.SuspendLayout();
             this.SuspendLayout();

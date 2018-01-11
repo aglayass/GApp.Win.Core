@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Windows.Forms;
 
-namespace GwinApp
+namespace GApp.GwinApp.Presentation
 {
     public partial class FormApplication : BaseForm
     {
