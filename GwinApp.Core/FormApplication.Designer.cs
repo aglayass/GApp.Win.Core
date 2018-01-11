@@ -1,4 +1,4 @@
-﻿namespace GwinApp.Presentation
+﻿namespace GApp.Win
 {
     partial class FormApplication
     {

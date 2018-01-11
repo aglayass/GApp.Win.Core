@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GApp.Win.UI">
+      <HintPath>..\packages\GApp\GApp.Win.UI.dll</HintPath>
+    </Reference>
     <Reference Include="GwinApp.UI">
       <HintPath>..\packages\GApp\GwinApp.UI.dll</HintPath>
     </Reference>
@@ -91,9 +94,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GwinApp.Core\GwinApp.Core.csproj">
+    <ProjectReference Include="..\GwinApp.Core\GApp.Win.Core.csproj">
       <Project>{F780E1F8-A058-421D-B803-1B74FF63381E}</Project>
-      <Name>GwinApp.Core</Name>
+      <Name>GApp.Win.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

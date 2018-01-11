@@ -1,5 +1,4 @@
-﻿using GwinApp;
-using GwinApp.Presentation;
+﻿using GApp.Win;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

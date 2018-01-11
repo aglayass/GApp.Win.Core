@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GwinApp.Presentation
+namespace GApp.Win
 {
     public class BaseForm :GForm, IBaseForm
     {

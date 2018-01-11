@@ -7,8 +7,8 @@
     <ProjectGuid>{F780E1F8-A058-421D-B803-1B74FF63381E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GwinApp</RootNamespace>
-    <AssemblyName>GwinApp.Core</AssemblyName>
+    <RootNamespace>GApp.Win</RootNamespace>
+    <AssemblyName>GApp.Win.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,8 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GwinApp.UI">
-      <HintPath>..\packages\GApp\GwinApp.UI.dll</HintPath>
+    <Reference Include="GApp.Win.UI">
+      <HintPath>..\packages\GApp\GApp.Win.UI.dll</HintPath>
     </Reference>
     <Reference Include="MaterialSkin">
       <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
@@ -60,35 +60,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Presentation\IBaseForm.cs" />
-    <Compile Include="Presentation\BaseForm.cs">
+    <Compile Include="IBaseForm.cs" />
+    <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\GwinMainForm.cs">
+    <Compile Include="GwinMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\FormApplication.cs">
+    <Compile Include="FormApplication.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\FormApplication.Designer.cs">
+    <Compile Include="FormApplication.Designer.cs">
       <DependentUpon>FormApplication.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Presentation\BaseForm.resx">
+    <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\GwinMainForm.resx">
+    <EmbeddedResource Include="GwinMainForm.resx">
       <DependentUpon>GwinMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\FormApplication.ar.resx">
+    <EmbeddedResource Include="FormApplication.ar.resx">
       <DependentUpon>FormApplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\FormApplication.fr.resx">
+    <EmbeddedResource Include="FormApplication.fr.resx">
       <DependentUpon>FormApplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\FormApplication.resx">
+    <EmbeddedResource Include="FormApplication.resx">
       <DependentUpon>FormApplication.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -98,15 +98,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Presentation\Authentication\" />
+    <Folder Include="Authentication\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GwinApp.Form\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GwinApp.DataGrid\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GwinApp.Filter\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GwinApp.Manager\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GApp.Security\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\..\GwinApp.Library\$(TargetName).dll"</PostBuildEvent>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GApp.Win.FormControl\packages\GApp\$(TargetName).dll"
+copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GApp.Win.DataGridControl\packages\GApp\$(TargetName).dll"
+copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GApp.Win.FilterControl\packages\GApp\$(TargetName).dll"
+copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GApp.Win.ManagerControl\packages\GApp\$(TargetName).dll"
+copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\..\GApp.Win.Library\$(TargetName).dll"</PostBuildEvent>
   </PropertyGroup>
 </Project>
