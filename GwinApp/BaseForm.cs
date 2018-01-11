@@ -1,4 +1,5 @@
 ﻿
+using GwinApp.UI;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,7 +10,7 @@ using System.Windows.Forms;
 
 namespace GwinApp
 {
-    public class BaseForm :MetroFramework.Forms.MetroForm, IBaseForm
+    public class BaseForm :GForm, IBaseForm
     {
 
         public BaseForm()
@@ -28,7 +29,8 @@ namespace GwinApp
             // 
             // BaseForm
             // 
-            this.ClientSize = new System.Drawing.Size(433, 284);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.ClientSize = new System.Drawing.Size(623, 324);
             this.Name = "BaseForm";
             this.ResumeLayout(false);
 

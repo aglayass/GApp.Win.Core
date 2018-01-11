@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GwinApp.UI">
+      <HintPath>..\packages\GApp\GwinApp.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -38,6 +44,9 @@
     </Reference>
     <Reference Include="MetroFramework.Fonts">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSet UI">
+      <HintPath>..\packages\MetroSet_UI.1.0.3\lib\net45\MetroSet UI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,6 +64,9 @@
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentation\MainForm\FormApplication.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +79,9 @@
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GMainForm.resx">
+      <DependentUpon>GMainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\MainForm\FormApplication.ar.resx">
       <DependentUpon>FormApplication.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,21 +93,20 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GwinForm\" />
     <Folder Include="Presentation\Authentication\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GwinForm\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GwinDataGrid\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GwinFilter\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GwinManager\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\TP_Tracking\packages\GApp\$(TargetName).dll"
-
-
-</PostBuildEvent>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GwinApp.Form\packages\GApp\$(TargetName).dll"
+copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GwinApp.DataGrid\packages\GApp\$(TargetName).dll"
+copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GwinApp.Filter\packages\GApp\$(TargetName).dll"
+copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GwinApp.Manager\packages\GApp\$(TargetName).dll"
+copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GApp.Security\packages\GApp\$(TargetName).dll"
+copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\..\GwinApp.Library\$(TargetName).dll"</PostBuildEvent>
   </PropertyGroup>
 </Project>

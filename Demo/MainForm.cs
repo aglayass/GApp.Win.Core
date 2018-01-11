@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Demo
 {
-    public partial class Form1 : BaseForm
+    public partial class MainForm : GMainForm
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
