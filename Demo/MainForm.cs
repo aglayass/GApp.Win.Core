@@ -1,5 +1,5 @@
-﻿using GApp.GwinApp;
-using GwinApp;
+﻿using GwinApp;
+using GwinApp.Presentation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Demo
 {
-    public partial class MainForm : GMainForm
+    public partial class MainForm : GwinMainForm
     {
         public MainForm()
         {

@@ -7,7 +7,7 @@
     <ProjectGuid>{F780E1F8-A058-421D-B803-1B74FF63381E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GApp.GwinApp</RootNamespace>
+    <RootNamespace>GwinApp</RootNamespace>
     <AssemblyName>GwinApp.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
