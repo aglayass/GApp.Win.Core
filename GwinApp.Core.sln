@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GwinApp.Core", "GwinApp\GwinApp.Core.csproj", "{F780E1F8-A058-421D-B803-1B74FF63381E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GwinApp.Core", "GwinApp.Core\GwinApp.Core.csproj", "{F780E1F8-A058-421D-B803-1B74FF63381E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{39705641-C900-4046-B3EF-36239BBDDF38}"
 EndProject

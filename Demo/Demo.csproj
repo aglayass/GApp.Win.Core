@@ -91,7 +91,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GwinApp\GwinApp.Core.csproj">
+    <ProjectReference Include="..\GwinApp.Core\GwinApp.Core.csproj">
       <Project>{F780E1F8-A058-421D-B803-1B74FF63381E}</Project>
       <Name>GwinApp.Core</Name>
     </ProjectReference>
