@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GApp.Presentation.Manager
+namespace GApp.Win.Manager
 {
-    public interface IGDataGridControl
+    public interface IManagerControl
     {
 
     }

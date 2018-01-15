@@ -1,5 +1,4 @@
-﻿
-using GwinApp.UI;
+﻿using MetroSet_UI.Forms;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,12 +9,12 @@ using System.Windows.Forms;
 
 namespace GApp.Win
 {
-    public class BaseForm :GForm, IBaseForm
+    public class BaseForm : MetroSetForm, IBaseForm
     {
 
         public BaseForm()
         {
-            
+            this.InitializeComponent();
         }
 
         /// <summary>
