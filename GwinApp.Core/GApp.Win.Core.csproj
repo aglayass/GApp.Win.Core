@@ -73,6 +73,11 @@
     <Compile Include="FormApplication.Designer.cs">
       <DependentUpon>FormApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager\IGActionControl.cs" />
+    <Compile Include="Manager\IGDataGridControl.cs" />
+    <Compile Include="Manager\IGFilterControl.cs" />
+    <Compile Include="Manager\IGFormControl.cs" />
+    <Compile Include="Manager\IGLineActionControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
