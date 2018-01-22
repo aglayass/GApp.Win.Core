@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GApp.Win.Manager
+namespace GApp.Win.EntryDataGrid
 {
  
-    public interface  IDataGridControl 
+    public interface  IEntryDataGridControl 
     {
         event EventHandler DataChanged;
         string Title { set; get; }

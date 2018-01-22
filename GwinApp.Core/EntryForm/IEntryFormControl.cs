@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GApp.Win.Manager
+namespace GApp.Win.EntryForm
 {
     /// <summary>
     /// Generic winform Form
     /// </summary>
-    public interface IFormControl 
+    public interface IEntryFormControl 
     {
         /// <summary>
         /// Set or get Title value

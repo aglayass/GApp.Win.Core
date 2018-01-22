@@ -1,5 +1,4 @@
-﻿using MetroSet_UI.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,7 +8,7 @@ using System.Windows.Forms;
 
 namespace GApp.Win
 {
-    public class BaseForm : MetroSetForm, IBaseForm
+    public class BaseForm : Form, IBaseForm
     {
 
         public BaseForm()

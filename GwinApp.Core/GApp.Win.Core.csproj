@@ -33,9 +33,6 @@
     <Reference Include="GApp.Core">
       <HintPath>..\packages\GApp\GApp.Core.dll</HintPath>
     </Reference>
-    <Reference Include="MetroSet UI">
-      <HintPath>..\packages\MetroSet_UI.1.0.3\lib\net45\MetroSet UI.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -52,10 +49,10 @@
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manager\IDataGridControl.cs" />
-    <Compile Include="Manager\IDataGridNavigator.cs" />
+    <Compile Include="EntryDataGrid\IEntryDataGridControl.cs" />
+    <Compile Include="EntryDataGrid\IDataGridNavigator.cs" />
     <Compile Include="Manager\IManagerControl.cs" />
-    <Compile Include="Manager\IFormControl.cs" />
+    <Compile Include="EntryForm\IEntryFormControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
