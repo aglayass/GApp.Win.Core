@@ -25,6 +25,8 @@ namespace GApp.Win.EntryForm
         /// <summary>
         /// Set or get the entity value
         /// </summary>
-        BaseEntity Value { set; get; }
+        object Value { set; get; }
+
+        bool isValidate();
     }
 }

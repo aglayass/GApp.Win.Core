@@ -15,5 +15,7 @@ namespace GApp.Win.EntryDataGrid
         DataGridView EntityDataGridView { set; get; }
         BindingSource BindingSource { set; get; }
         List<object> DataSource { set; get; }
+        int Width { get; set; }
+        int Height { get; set; }
     }
 }

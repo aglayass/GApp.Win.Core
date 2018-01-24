@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\ControlsHelper.cs" />
     <Compile Include="IBaseForm.cs" />
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
@@ -72,6 +73,8 @@
 copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GApp.Win.Manager\GApp.Win.DataGridControl\packages\GApp\$(TargetName).dll"
 copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GApp.Win.Manager\GApp.Win.FilterControl\packages\GApp\$(TargetName).dll"
 copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GApp.Win.Manager\GApp.Win.ManagerControl\packages\GApp\$(TargetName).dll"
+
+copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GApp.Win.Validator\packages\GApp\$(TargetName).dll"
 copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\..\..\GApp.Win.Library\$(TargetName).dll"</PostBuildEvent>
   </PropertyGroup>
 </Project>
