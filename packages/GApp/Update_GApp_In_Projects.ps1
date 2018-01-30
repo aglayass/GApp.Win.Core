@@ -37,6 +37,9 @@ cp -Force .\* ..\GApp.Win\GApp.Win.Message\packages\GApp\
 cp -Force .\* ..\GApp.Win\GApp.Win.UI\packages\GApp\
 cp -Force .\* ..\GApp.Win\GApp.Win.Validator\packages\GApp\
 
+cp -Force .\* ..\GApp.Win\GApp.Win.ManagerNavigator\packages\GApp\
+cp -Force .\* ..\GApp.Win\GApp.Win.EntityView\packages\GApp\
+
 
 #
 # GApp.Win.Manager

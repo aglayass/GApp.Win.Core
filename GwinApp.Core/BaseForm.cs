@@ -8,6 +8,7 @@ using System.Windows.Forms;
 
 namespace GApp.Win
 {
+    [Obsolete("Use GApp.UI.Forms.GForm")]
     public class BaseForm : Form, IBaseForm
     {
 
