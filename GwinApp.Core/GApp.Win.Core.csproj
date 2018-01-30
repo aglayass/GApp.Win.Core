@@ -55,10 +55,19 @@
     <Compile Include="Manager\IManagerControl.cs" />
     <Compile Include="EntryForm\IEntryFormControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\GAppTestComponentFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\GAppTestComponentFrom.Designer.cs">
+      <DependentUpon>GAppTestComponentFrom.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\GAppTestComponentFrom.resx">
+      <DependentUpon>GAppTestComponentFrom.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -69,12 +78,7 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GApp.Win.Manager\GApp.Win.FormControl\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GApp.Win.Manager\GApp.Win.DataGridControl\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll" "$(SolutionDir)\..\GApp.Win.Manager\GApp.Win.FilterControl\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GApp.Win.Manager\GApp.Win.ManagerControl\packages\GApp\$(TargetName).dll"
-
-copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\GApp.Win.Validator\packages\GApp\$(TargetName).dll"
-copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\..\..\GApp.Win.Library\$(TargetName).dll"</PostBuildEvent>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\..\GApp.Library\$(TargetName).dll"
+powershell -NoProfile -ExecutionPolicy RemoteSigned -file $(SolutionDir)\..\..\GApp.Library\Update_GApp_In_Projects.ps1</PostBuildEvent>
   </PropertyGroup>
 </Project>

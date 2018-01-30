@@ -1,0 +1,2 @@
+copy /Y "$(TargetDir)$(TargetName).dll"  "$(SolutionDir)\..\..\GApp.Library\$(TargetName).dll"
+powershell -NoProfile -ExecutionPolicy RemoteSigned -file $(SolutionDir)\..\..\GApp.Library\Update_GApp_In_Projects.ps1
