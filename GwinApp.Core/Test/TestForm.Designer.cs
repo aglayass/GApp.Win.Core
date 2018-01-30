@@ -1,6 +1,6 @@
 ﻿namespace GApp.Win.Test
 {
-    partial class GAppTestComponentForm
+    partial class TestForm
     {
         /// <summary>
         /// Required designer variable.

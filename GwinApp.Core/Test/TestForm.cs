@@ -17,14 +17,14 @@ namespace GApp.Win.Test
 
 
 
-    public partial class GAppTestComponentForm : Form
+    public partial class TestForm : Form
     {
 
 
         public bool TestMode = false;
 
 
-        public GAppTestComponentForm()
+        public TestForm()
         {
             InitializeComponent();
         }

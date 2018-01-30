@@ -8,8 +8,7 @@ cd F:\GitHub\GAppProject\GApp.Library
 # 
 # GApp.Core
 #
-cp -Force .\* ..\GApp.Core\packages\GApp\
-cp -Force .\* ..\GApp.Security\packages\GApp\
+cp -Force .\* ..\GApp.Core\GApp.Security\packages\GApp\
 
 #
 # GApp.DAL
