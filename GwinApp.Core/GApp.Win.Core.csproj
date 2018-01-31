@@ -55,7 +55,6 @@
     <Compile Include="Manager\EntryDataGrid\IDataGridNavigator.cs" />
     <Compile Include="Manager\IManagerControl.cs" />
     <Compile Include="Manager\EntryForm\IEntryFormControl.cs" />
-    <Compile Include="Entities\ManagerInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test\TestForm.cs">
       <SubType>Form</SubType>
