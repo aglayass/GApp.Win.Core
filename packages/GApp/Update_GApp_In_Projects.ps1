@@ -65,7 +65,7 @@ cp -Force -r .\* ..\GApp.Demo.Core\packages\GApp\
 #
 cp -Force -r .\* ..\GApp.Dev\GApp.Dev.ComponentsLoader\packages\GApp\
 cp -Force -r .\* ..\GApp.Dev\GApp.Dev.RunTimeGenerator\packages\GApp\
-cp -Force -r .\* ..\GApp.Dev\GApp.Dev.ScriptShell\packages\GApp\
+cp -Force -r .\* ..\GApp.Dev\GApp.Dev.WorkSpace\packages\GApp\
 cp -Force -r .\* ..\GApp.Dev\GApp.Dev.Win.Test\packages\GApp\
 cp -Force -r .\* ..\GApp.Dev\GApp.Genetators\packages\GApp\
 
